@@ -39,9 +39,9 @@ def get_all_items():
     #scraping proccess
     for content in contents:
         try:
-            review = content.find('div', attrs={'class': 'UD7Dzf'}).find('jscontroller', attrs={'jscontroller':'LVJlx'})
+            review = content.find('div', attrs={'class': 'XnFhVd'}).find('jsname', attrs={'jsaction':'JIbuQc:CJ4MDb(wmgIXe)'}).text
         except:
-            review = content.find_all('span', attrs={'jsname':'bN97Pc'})
+            review = content.find('div', attrs={'class':'U26fgb O0WRkf oG5Srb C0oVfc n9lfJ M9Bg4d'}).text
 
         total_user = content.find('span', attrs={'class':'EymY4b'}).text
         try:
